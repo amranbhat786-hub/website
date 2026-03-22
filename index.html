@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Instagram Prompts</title>
+<style>
+body{
+font-family: Arial, sans-serif;
+background:#0f172a;
+color:white;
+padding:20px;
+}
+h1{
+text-align:center;
+}
+.box{
+background:#1e293b;
+padding:15px;
+border-radius:12px;
+margin-bottom:15px;
+}
+button{
+background:#22c55e;
+border:none;
+padding:8px 12px;
+border-radius:8px;
+color:white;
+}
+</style>
+</head>
+
+<body>
+
+<h1>🔥 Instagram Photo Prompts</h1>
+
+<div class="box">
+iPhone mirror selfie, natural lighting, sharp jawline, realistic skin texture, clean mirror, cinematic mood, 4K
+<br><br>
+<button onclick="copyText(this)">Copy</button>
+</div>
+
+<div class="box">
+ultra cinematic portrait, soft rim light, dark background, luxury aesthetic, sharp focus, editorial photography
+<br><br>
+<button onclick="copyText(this)">Copy</button>
+</div>
+
+<div class="box">
+anime realism portrait, glowing edges, wind hair, dramatic lighting, ultra detailed face, 4K realism
+<br><br>
+<button onclick="copyText(this)">Copy</button>
+</div>
+
+<script>
+function copyText(btn){
+let text=btn.parentElement.innerText.replace("Copy","");
+navigator.clipboard.writeText(text);
+btn.innerText="Copied!";
+}
+</script>
+
+</body>
+  </html>
